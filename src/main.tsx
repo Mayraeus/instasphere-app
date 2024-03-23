@@ -27,28 +27,27 @@ import './assets/css/index.css';
 setupIonicReact();
 
 /* Pages */
-import Blank from './layouts/Blank.jsx';
-import Tabs from './layouts/Tabs.jsx';
-import Sidemenu from './layouts/Sidemenu.jsx';
-
+import Acceso from './pages/Acceso.jsx';
+import Registro from './pages/Registro.jsx';
+import Pestañas from './pages/Pestañas.jsx';
+import Mensajes from './pages/Mensajes.jsx';
+import Perfil from './pages/Perfil.jsx';
 
 createRoot(document.getElementById('root')!).render(
     <IonApp>
         <IonReactRouter>
             <IonRouterOutlet>
                 <Route exact path="/">
-                    <Home />
+                    <Acceso />
                 </Route>
-                <Route exact path="/blank">
-                    <Blank title="Blank">
-                        Hola mundo
-                    </Blank>
+                <Route exact path="/registro">
+                    <Registro />
                 </Route>
-                <Route exact path="/tabs">
-                    <Tabs />
+                <Route exact path="/inicio">
+                    <Pestañas />
                 </Route>
-                <Route exact path="/menu">
-                    <Sidemenu />
+                <Route exact path="/mensajes">
+                    <Mensajes />
                 </Route>
             </IonRouterOutlet>
         </IonReactRouter>
