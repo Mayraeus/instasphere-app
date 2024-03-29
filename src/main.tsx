@@ -35,7 +35,7 @@ import Perfil from './pages/Perfil.jsx';
 
 createRoot(document.getElementById('root')!).render(
     <IonApp>
-        <IonReactRouter>
+        <IonReactRouter basename='/instasphere-app/'>
             <IonRouterOutlet>
                 <Route exact path="/">
                     <Acceso />
