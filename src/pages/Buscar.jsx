@@ -4,8 +4,9 @@ import Titulo from "../components/Titulo"
 export default function Buscar() {
     return (
         <IonPage>
+            <Titulo/>
             <IonContent>
-                <IonSearchbar color="light" placeholder="Buscar"></IonSearchbar>
+                Buscar
             </IonContent>
         </IonPage>
     )

@@ -10,7 +10,7 @@ import Mensajes from './Mensajes';
 
 export default function Pestañas() {
     return (
-        <IonReactRouter basename='/instasphere-app/'>
+        <IonReactRouter basename={import.meta.env.BASE_URL}>
             <IonTabs>
                 <IonRouterOutlet>
                     <Route exact path="/inicio">
