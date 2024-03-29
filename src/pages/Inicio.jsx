@@ -10,6 +10,10 @@ export default function Inicio() {
                 <Publicacion />
                 <Publicacion />
                 <Publicacion />
+                <Publicacion />
+                <Publicacion />
+                <Publicacion />
+                <Publicacion />
             </IonContent>
         </IonPage>
     )

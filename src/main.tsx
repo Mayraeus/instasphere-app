@@ -49,6 +49,9 @@ createRoot(document.getElementById('root')!).render(
                 <Route exact path="/mensajes">
                     <Mensajes />
                 </Route>
+                <Route exact path="/perfil">
+                    <Perfil />
+                </Route>
             </IonRouterOutlet>
         </IonReactRouter>
     </IonApp>

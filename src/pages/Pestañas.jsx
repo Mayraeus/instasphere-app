@@ -1,7 +1,7 @@
 import { IonContent, IonPage, IonHeader, IonToolbar, IonIcon, IonLabel, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs, } from '@ionic/react'
 import { Redirect, Route } from 'react-router-dom';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, planet, square, triangle, arrowBack, person } from 'ionicons/icons';
+import { person, search, home } from 'ionicons/icons';
 
 import Inicio from './Inicio';
 import Buscar from './Buscar';
@@ -29,11 +29,11 @@ export default function Pestañas() {
                 </IonRouterOutlet>
                 <IonTabBar slot="bottom">
                     <IonTabButton tab="tab1" href="/inicio">
-                        <IonIcon aria-hidden="true" icon={triangle} />
+                        <IonIcon aria-hidden="true" icon={home} />
                         <IonLabel>Inicio</IonLabel>
                     </IonTabButton>
                     <IonTabButton tab="tab2" href="/buscar">
-                        <IonIcon aria-hidden="true" icon={ellipse} />
+                        <IonIcon aria-hidden="true" icon={search} />
                         <IonLabel>Buscar</IonLabel>
                     </IonTabButton>
                     <IonTabButton tab="tab3" href="/perfil">

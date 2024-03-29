@@ -11,8 +11,11 @@ export default function Titulo({ mostrar = true }) {
                     <IonRow>
                         <IonCol size="11">
                             <h1 className='instasphere'>
-                                <img src={logo2} width="24px" alt="" style={{ marginRight: '13px' }} />
+                                <Link to='/inicio'>
+                                    <img src={logo2} width="24px" alt="" style={{ marginRight: '13px' }} />
+                                </Link>
                                 Instasphere
+
                             </h1>
                         </IonCol>
                         <IonCol size="1">
