@@ -1,15 +1,15 @@
 import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react'
 import image from '../assets/img/image.jpg'
 
-export default function Publicacion() {
+export default function Publicacion({descripcion, post}) {
   return (
     <IonCard>
-      <img alt="Silhouette of mountains" src={image} />
+      <img src={post == null ? image : post} />
       <IonCardHeader>
         <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
       </IonCardHeader>
 
-      <IonCardContent>Here's a small text description for the card content. Nothing more, nothing less.</IonCardContent>
+      <IonCardContent>{descripcion}</IonCardContent>
     </IonCard>
   )
 }
