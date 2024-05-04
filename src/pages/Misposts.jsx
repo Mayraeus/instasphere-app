@@ -1,19 +1,8 @@
-import { useEffect, useState } from 'react'
-import { IonContent, IonPage } from '@ionic/react'
-import Titulo from "../components/Titulo"
-import Publicacion from '../components/Publicacion'
+import { useState, useEffect } from "react"
+import Publicacion from "../components/Publicacion"
+import {IonGrid} from "@ionic/react"
 
-export default function Inicio() {
-
-    return (
-        <IonPage>
-            <Titulo />
-            <Contenido />
-        </IonPage>
-    )
-}
-
-export function Contenido() {
+export default function Misposts() {
 
     const [post, setPost] = useState([])
 
@@ -24,11 +13,11 @@ export function Contenido() {
     }, [])
 
     return (
-        <IonContent>
+        <IonGrid>
             {post.map((post, index) =>
                 <Publicacion descripcion={post.descripcion} post={'https://instasphere-beta.vercel.app'} />
             )}
-        </IonContent>
+        </IonGrid>
     )
 
 }
